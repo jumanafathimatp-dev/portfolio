@@ -2,109 +2,268 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elian Ross Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-weight/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./shared.css">
     <link rel="stylesheet" href="./portfolio.css">
-     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
-      
-           </script>
 </head>
 <body>
-    <div id="main">
-        
-        <div id="center">
-           <h2 id="name" style="font-family: 'Times New Roman', Times, serif"  >Elian Ross</h2>
-           <h3 id="date">©2026</h3>
-           <h1 id="hi" style="font-family:fantasy;"><strong>Hi..I'm Ross</strong></h1>
-           <i class="fas fa bars"></i>
-           <h2 id="product" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Product Designer</h2>
-            <div class="sub">
+    <!-- Floating Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Ross<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#recents">Work</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Main Container -->
+    <main class="container page-content">
+        <!-- Hero Section -->
+        <section class="hero-section fade-in">
+            <div class="hero-text">
+                <div class="hero-badge">©2026 Portfolio</div>
+                <h1 class="hero-title">Hi, I'm Ross</h1>
+                <h2 class="hero-subtitle">Product Designer</h2>
+                <p class="hero-desc">Crafting highly functional, visually stunning interfaces that elevate digital brands.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#recents" class="btn btn-secondary">View Work</a>
+                </div>
             </div>
-            <img src="./WhatsApp Image 2026-04-17 at 3.36.43 PM.jpeg" alt="profile pic" id="image">
-           
-           <div id="about">
-            <h1>About Me</h1>
-            <p id="para" >I'm a UI/UX Designer and Webflow Developer based in New York, creating modern, user-friendly websites that bring ideas to life  <br>
-               I am currently working at a digital agency creating visuals for a well-known coffee brand and side hustling as a freelancer ready for new challenges.</p>
-            
-           </div>
-           <div class="work">
-            <h1 id="exp">10+  </h1>
-
-            <h4 id="of">year of experience</h4>
-             <h1 id="exp">250+ </h1>
-              <h4 id="of">complete Projects</h4>
-              <h1 id="exp">60+ </h1>
-              <h4 id="of">clients on World Wide</h4>
-              <hr style="width:100vh;">
-              
-               
-
-
-
-            
-           </div>
-            <div id="recents">
-             <h1 id="recent">Recent Work</h1>
-             <p id="parag">Wheather you need a stricking portfolio,a funtional website,<br>or a custom solution,i'm here to deliver results that align <br>with your vision</p>
-             <img id="workimg" src="./WhatsApp Image 2026-04-17 at 9.39.41 PM.jpeg" alt="">
-             <img id="worksec" src="./WhatsApp Image 2026-04-17 at 9.39.41 PM.jpeg" alt="">
-             <p id="paratwo">Your creative process is constantly evolving, shaped by the intricate forms of architecture, the organic beauty of nature, and the bold expressions of modern art. These influences intertwine to inspire fresh ideas, allowing your designs to balance structure, fluidity, and contemporary aesthetics.</p>
-                      
+            <div class="hero-image-wrapper">
+                <div class="image-border-glow">
+                    <img src="./photos/WhatsApp Image 2026-04-17 at 3.36.43 PM.jpeg" alt="Elian Ross Profile" class="hero-image">
+                </div>
             </div>
-            <div>
-                <h1 id="service">MY SERVICES</h1>
-                <p id="par3">A personal portfolio’s inside section provides a detailed <br>look at brthe creator’s work,showcasing  their skills,<br>
-                <p id="para4" > process, and expertise.</p>
-                <h1 id="service">Web Flow Designer</h1>
-                <p id="par3">I craft fully responsive, visually stunning, and highly functional <br> websites that reflect your unique style and <br>professional identity.</p>
-                <button id="button" type="submit"><a href="./web.html">⬆</a> </button>
-                <img src="./WhatsApp Image 2026-04-17 at 11.49.13 PM.jpeg" alt="" id="simg">
-                <hr id="line">
-                <button id="button" type="submit"> <a href="./ui.html">↑</a></button>
-                 <h1 id="service">Ui-Ux Design</h1>
-                  <hr id="line">
-                   <button id="button" type="submit">↑</button>
-                      <h1 id="service">Motion Graphics</h1>
-                       <hr id="line">
+        </section>
 
-                       <h1 id="show">ShowCasing <br> My Best Work</h1>
-                       <p id="para4">I craft fully responsive, visually stunning, and highly functional <br> websites that reflect your unique style and <br>professional identity.</p>
-                        <img src="./WhatsApp Image 2026-04-18 at 12.34.29 AM.jpeg" alt="" id="jimg">
-                        <hr id="line">
+        <!-- About Me Section -->
+        <section id="about" class="about-section glass-card fade-in delay-1">
+            <div class="about-grid">
+                <div class="about-info">
+                    <span class="section-tag">About Me</span>
+                    <h2>Designing Solutions, Not Just Visuals</h2>
+                    <p class="para-lead">I am a UI/UX Designer and Webflow Developer based in New York, dedicated to creating modern, user-friendly websites that bring concepts to life.</p>
+                    <p>Currently, I am working with a digital agency designing visuals for a well-known coffee brand, while side-hustling as a freelancer ready for new and exciting challenges.</p>
+                </div>
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years of Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">250+</span>
+                        <span class="stat-label">Completed Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">60+</span>
+                        <span class="stat-label">Clients Worldwide</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <div id="foot">
+        <!-- Recent Work Section -->
+        <section id="recents" class="work-section fade-in delay-2">
+            <div class="section-header">
+                <div>
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Recent Work</h2>
+                </div>
+                <p class="section-desc">Whether you need a striking portfolio, a functional website, or a custom solution, I'm here to deliver results that align with your vision.</p>
+            </div>
 
-                           <div id="mail"><p >I'm Exicted to hear from you!</p></div> 
-                             <h1  id="im">ross@gmail.com</h1>
-                              <h3 id="date2">©2026</h3>
-                           
-
-<!-- 
-                            <a  href="portfolio.html" style="color: rgb(255, 255, 255) ; margin-top: 5vh; "  >Home</a>
-         <a href="" style="color: rgb(229, 153, 153); margin-top: 5vh;">About</a>
-           <a href="" style="color: white;  margin-top: 5vh;">Blog</a>
-            <a href="" style="color: white; margin-top: 5vh;">Contact</a> -->
-                      
-              <div id="ross"> <h1 >Ross</h1></div>
-              <div >
-                <div id="pro"><img src="./WhatsApp_Image_2026-04-18_at_10.33.53_AM-removebg-preview.png" alt=""></div>
+            <div class="work-grid">
+                <div class="work-card glass-card">
+                    <div class="work-img-wrapper">
+                        <img src="./photos/WhatsApp Image 2026-04-17 at 9.39.41 PM.jpeg" alt="Brand Redesign Project" class="work-img">
+                    </div>
+                    <div class="work-details">
+                        <h3>Evolving Creative Systems</h3>
+                        <p>Our creative process is constantly evolving, shaped by the intricate forms of architecture, the organic beauty of nature, and the bold expressions of modern art. These influences balance structure, fluidity, and contemporary aesthetics.</p>
+                    </div>
+                </div>
                 
-                <img src="./icons8-instagram-logo-50.png" alt="" id="ins">
-                <img src="./icons8-linkedin-50.png" alt="" id="li">
-                <img src="./icons8-mail-50.png" alt="" id="ma">
-                <div><p id="elian"><strong>©elian ross</strong>All right reserved</p>
-</div>
+                <div class="work-card glass-card">
+                    <div class="work-img-wrapper">
+                        <img src="./photos/WhatsApp Image 2026-04-17 at 9.39.41 PM.jpeg" alt="Digital Product Project" class="work-img">
+                    </div>
+                    <div class="work-details">
+                        <h3>Interactive Web Architecture</h3>
+                        <p>Blending contemporary grid layouts with sleek animation patterns. Each design serves as a structured digital system focused on intuitive navigation, minimal aesthetics, and robust performance.</p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section fade-in delay-3">
+            <div class="section-header text-center">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">My Services</h2>
+                <p class="section-desc mx-auto">Providing comprehensive design and development services tailored to showcase your skills, processes, and unique identity.</p>
+            </div>
+
+            <div class="services-list">
+                <!-- Service Item 1: Webflow -->
+                <div class="service-item glass-card">
+                    <div class="service-content">
+                        <span class="service-num">01</span>
+                        <div class="service-text">
+                            <h3>Webflow Design & Development</h3>
+                            <p>I craft fully responsive, visually stunning, and highly functional websites that reflect your unique style and professional identity.</p>
                         </div>
+                        <a href="./web.html" class="service-link-btn" title="View Web Projects">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <div class="service-preview-img">
+                        <img src="./photos/WhatsApp Image 2026-04-17 at 11.49.13 PM.jpeg" alt="Webflow Development Preview">
+                    </div>
+                </div>
 
-                       
+                <!-- Service Item 2: UI/UX -->
+                <div class="service-item glass-card">
+                    <div class="service-content">
+                        <span class="service-num">02</span>
+                        <div class="service-text">
+                            <h3>UI/UX Design</h3>
+                            <p>User research, wireframing, high-fidelity UI design, and interactive prototypes built to maximize user engagement and convert visitors.</p>
+                        </div>
+                        <a href="./ui.html" class="service-link-btn" title="View UI/UX Projects">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Service Item 3: Motion Graphics -->
+                <div class="service-item glass-card">
+                    <div class="service-content">
+                        <span class="service-num">03</span>
+                        <div class="service-text">
+                            <h3>Motion Graphics & Visuals</h3>
+                            <p>Engaging micro-interactions, dynamic illustrations, and video content that make interfaces feel alive and responsive.</p>
+                        </div>
+                        <a href="./motion.html" class="service-link-btn" title="View Motion Projects">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Showcasing Section -->
+        <section class="showcase-section glass-card fade-in delay-4">
+            <div class="showcase-grid">
+                <div class="showcase-content">
+                    <span class="section-tag">Featured Showreel</span>
+                    <h2>Showcasing My Best Work</h2>
+                    <p>Building fully responsive, fast-loading, and interactive platforms. Every element is refined to create a seamless synergy between visual aesthetic and functional performance.</p>
+                </div>
+                <div class="showcase-visual">
+                    <div class="showcase-img-frame">
+                        <img src="./photos/WhatsApp Image 2026-04-18 at 12.34.29 AM.jpeg" alt="Showcasing Best Work" class="showcase-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <span class="section-tag">Let's collaborate</span>
+                    <h3>I'm excited to hear from you!</h3>
+                    <a href="mailto:ross@gmail.com">ross@gmail.com</a>
+                </div>
+                
+                <div class="footer-brand-container">
+                    <div class="footer-avatar-wrapper">
+                        <img src="./photos/WhatsApp_Image_2026-04-18_at_10.33.53_AM-removebg-preview.png" alt="Ross" class="footer-avatar">
+                    </div>
+                    <div class="footer-brand-text">
+                        <h2 class="footer-logo">Ross<span>.</span></h2>
+                        <p>Product Designer & Developer</p>
+                    </div>
+                </div>
 
-        
-    </div>
+                <div class="footer-social-wrapper">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:ross@gmail.com" class="social-icon" aria-label="Email">
+                            <svg viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elian Ross. All rights reserved.</p>
+                <p>Designed & Coded with Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive navigation highlight script -->
+    <script>
+        // Header scroll behavior
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Simple active link tracker on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current) && current !== '') {
+                    link.classList.add('active');
+                }
+            });
+            if (window.scrollY < 100) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                navLinks[0].classList.add('active');
+            }
+        });
+    </script>
 </body>
 </html>

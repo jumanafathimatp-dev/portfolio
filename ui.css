@@ -1,31 +1,186 @@
-#main{
-    margin-left: 30vh;
-    margin-right: 30vh;
-    background-color: beige;
-    border-radius: 2vh;
-    padding-bottom: vh;
-    position: relative;
+@import "./shared.css";
+
+/* Subpage Page Container padding to avoid overlaps */
+.page-content {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
-#ui{
-    margin-left: 35vh;
-    font-size: 10vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #6b7a55;
-    position: absolute;
-   
-    
+
+/* Back Link Button */
+.back-link-wrapper {
+  margin-bottom: 1rem;
 }
-#img{
-    margin-left: 10vh;
-    margin-top: 40vh;
-    width: 100vh;
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1rem;
+  transition: var(--transition-smooth);
 }
-#para{
-    margin-top:20vh ;
-    position: absolute;
-    margin-left: 20vh;
-    font-size: 3vh;
-    font-family: monospace;
-    color: #6b7a55;
-    
+
+.back-btn i {
+  transition: var(--transition-smooth);
+}
+
+.back-btn:hover {
+  color: var(--accent-light);
+  text-shadow: 0 0 8px var(--accent-glow);
+}
+
+.back-btn:hover i {
+  transform: translateX(-4px);
+}
+
+/* Project Header details */
+.project-header {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.project-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text-primary) 70%, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: var(--text-secondary);
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+/* Section Tags */
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.25rem;
+}
+
+/* Visual Wrapper */
+.project-visual-wrapper {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 28px;
+  aspect-ratio: 1.77; /* 16:9 widescreen presentation */
+  background: var(--bg-secondary);
+}
+
+.project-img-frame {
+  width: 100%;
+  height: 100%;
+}
+
+.project-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.project-visual-wrapper:hover img {
+  transform: scale(1.03);
+}
+
+/* Grid Layout for details & info */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-info h3,
+.project-meta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  display: inline-block;
+}
+
+.project-info h3::after,
+.project-meta h3::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--accent);
+}
+
+.project-info p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.project-info p:last-child {
+  margin-bottom: 0;
+}
+
+/* Meta Data List */
+.meta-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meta-list li {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.75rem;
+}
+
+.meta-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.meta-list strong {
+  color: var(--text-primary);
+  display: block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .project-visual-wrapper {
+    aspect-ratio: 1.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-visual-wrapper {
+    aspect-ratio: 1.2;
+  }
+  .page-content {
+    gap: 2rem;
+    padding-top: 6rem;
+  }
 }
