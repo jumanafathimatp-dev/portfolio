@@ -1,0 +1,38 @@
+#main{
+    /* margin-left: 20vh;
+    margin-right: 20vh; */
+    background-color: rgb(199, 199, 151);
+    padding: 70vh;
+    border-radius: 2vh;
+    position: relative;
+}
+#motion{
+    margin-top: -60vh;
+    font-size: 15vh;
+    margin-left: -30vh;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+#graphics{
+     margin-top: -50vh;
+    font-size: 20vh;
+    margin-left: -40vh;
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#img{
+    margin-left: -48vh;
+    margin-top: -20vh;
+    width: 80vh;
+    height: 140h;
+
+}
+#img2{
+
+    margin-left:-50vh ;
+    width:80vh ;
+    margin-right: 40vh;
+    margin-top: 10vh;
+    height: 50vh;
+    
+}

@@ -1,0 +1,31 @@
+#main{
+    margin-left: 30vh;
+    margin-right: 30vh;
+    background-color: beige;
+    border-radius: 2vh;
+    padding-bottom: vh;
+    position: relative;
+}
+#ui{
+    margin-left: 35vh;
+    font-size: 10vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #6b7a55;
+    position: absolute;
+   
+    
+}
+#img{
+    margin-left: 10vh;
+    margin-top: 40vh;
+    width: 100vh;
+}
+#para{
+    margin-top:20vh ;
+    position: absolute;
+    margin-left: 20vh;
+    font-size: 3vh;
+    font-family: monospace;
+    color: #6b7a55;
+    
+}

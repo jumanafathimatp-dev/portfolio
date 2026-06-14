@@ -1,0 +1,25 @@
+#main{
+    background-color: #6b7a55; ;
+    border-radius: 5vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    padding-top: 100vh;
+    /* padding-bottom: 100vh; */
+
+}
+#sub{
+    background-color:beige
+    
+    
+    border-radius: 1vh;
+}
+#pro{
+    margin-top: -97vh;
+    margin-left: 45vh;
+    font-size: 8vh;
+    color: beige;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#pimg{
+    margin-left: 30vh;
+}

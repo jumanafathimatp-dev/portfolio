@@ -1,0 +1,28 @@
+#head{
+    background-color: blanchedalmond;
+    padding-top: 10vh;
+    color: white;
+   position: sticky;
+   top: 0;
+   justify-content: ;
+ flex-direction: ;
+}
+#main{
+    background-color: rgb(232, 177, 177);
+    padding-top: 200vh;
+    width:30%;
+    height: 100vh;
+
+}
+#side{
+    background-color: rgb(221, 221, 139);
+    padding-right:-100vh;
+    padding-top: 200vh;
+    width:70%;
+    /* height: 200vh; */
+
+}
+#first{
+    display: flex;
+    
+}
