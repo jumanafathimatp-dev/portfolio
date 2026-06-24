@@ -1,74 +1,83 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX Designs | Elian Ross</title>
-  >
+    <title>Motion Graphics | Elian Ross</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-   
+    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-weight/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./shared.css">
-    <link rel="stylesheet" href="./ui.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/motion.css">
 </head>
 <body>
-  >
+    <!-- Floating Header -->
     <header class="header">
         <div class="container">
-            <a href="./portfolio.html" class="logo">Ross<span>.</span></a>
+            <a href="../index.html" class="logo">Ross<span>.</span></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="./portfolio.html">Home</a></li>
-                    <li><a href="./portfolio.html#about">About</a></li>
-                    <li><a href="./portfolio.html#recents" class="active">Work</a></li>
-                    <li><a href="./portfolio.html#services">Services</a></li>
-                    <li><a href="./portfolio.html#contact">Contact</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#recents" class="active">Work</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main class="container page-content">
         <div class="back-link-wrapper">
-            <a href="./portfolio.html#services" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Services</a>
+            <a href="../index.html#services" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Services</a>
         </div>
 
         <section class="project-details-section fade-in">
             <div class="project-header">
-                <span class="section-tag">UI/UX Design</span>
-                <h1 class="project-title">UI/UX Case Studies & Flows</h1>
-                <p class="project-subtitle">Architecting high-fidelity mockups, clean design systems, and responsive user flows centered around human behavior.</p>
+                <span class="section-tag">Motion Graphics</span>
+                <h1 class="project-title">Motion Art & Digital Graphics</h1>
+                <p class="project-subtitle">Designing vector motion, detailed storyboard paths, and responsive micro-animations that keep interfaces active.</p>
             </div>
 
-            <div class="project-visual-wrapper glass-card">
-                <div class="project-img-frame">
-                    <img src="./photos/WhatsApp Image 2026-04-18 at 12.42.50 PM.jpeg" alt="UI/UX Wireframes and Visual Prototypes" id="img">
+            <!-- Double Image Showcase Gallery -->
+            <div class="gallery-grid">
+                <div class="gallery-card glass-card">
+                    <div class="gallery-img-frame">
+                        <img src="../photos/Screenshot 2026-04-18 151435.png" alt="Motion Graphic Concept Artwork 1" id="img">
+                    </div>
+                </div>
+                <div class="gallery-card glass-card">
+                    <div class="gallery-img-frame">
+                        <img src="../photos/Screenshot 2026-04-17 213246.png" alt="Motion Graphic Concept Artwork 2" id="img2">
+                    </div>
                 </div>
             </div>
 
             <div class="project-grid">
                 <div class="project-info glass-card">
-                    <h3>Design Philosophy</h3>
-                    <p>I craft fully responsive, visually stunning, and highly functional interfaces that reflect your unique style and professional identity. By conducting detailed user research and mapping out personas, we structure journeys that minimize friction points.</p>
-                    <p>Our component systems are designed atomically, promoting style guides that developers can translate into production with ease. Every asset is carefully aligned with spatial layouts, hierarchy, and accessible contrast principles.</p>
+                    <h3>Animation Workflow</h3>
+                    <p>Visual elements are structured to dynamically communicate message frameworks. From initial storyboard framing to detailed transition tuning, we build sequences that guide the user's attention seamlessly.</p>
+                    <p>We leverage light weight formats (such as Lottie, SVG path animations, and GPU-accelerated CSS keyframes) to deliver rapid load speeds without sacrificing visual quality.</p>
                 </div>
                 
                 <div class="project-meta glass-card">
                     <h3>Key Deliverables</h3>
                     <ul class="meta-list">
-                        <li><strong>Role:</strong> Lead UI/UX Architect</li>
-                        <li><strong>Tools:</strong> Figma, FigJam, Photoshop, Illustrator</li>
-                        <li><strong>Deliverables:</strong> User Journeys, High-Fidelity UI, Prototypes, Shared Stylesheets</li>
-                        <li><strong>Aesthetics:</strong> Curated color mappings, dynamic spacing systems</li>
+                        <li><strong>Role:</strong> Motion Designer & Animator</li>
+                        <li><strong>Tools:</strong> After Effects, Premiere, Lottie, SVG CSS</li>
+                        <li><strong>Specs:</strong> 60fps Vector Assets, Interactive Lottie JSONs</li>
+                        <li><strong>Optimization:</strong> High-performance hardware acceleration</li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
 
-   
+    <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-content">
@@ -80,7 +89,7 @@
                 
                 <div class="footer-brand-container">
                     <div class="footer-avatar-wrapper">
-                        <img src="./photos/WhatsApp_Image_2026-04-18_at_10.33.53_AM-removebg-preview.png" alt="Ross" class="footer-avatar">
+                        <img src="../photos/WhatsApp_Image_2026-04-18_at_10.33.53_AM-removebg-preview.png" alt="Ross" class="footer-avatar">
                     </div>
                     <div class="footer-brand-text">
                         <h2 class="footer-logo">Ross<span>.</span></h2>
@@ -111,6 +120,7 @@
         </div>
     </footer>
 
+    <!-- Scroll behavior script -->
     <script>
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.header');
@@ -122,4 +132,4 @@
         });
     </script>
 </body>
-</html> -->
+</html>

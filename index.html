@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-weight/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./shared.css">
-    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
 </head>
 <body>
   
@@ -29,10 +29,10 @@
             </nav>
         </div>
     </header>
-
-
+ 
+ 
     <main class="container page-content">
-     
+      
         <section class="hero-section fade-in">
             <div class="hero-text">
                 <div class="hero-badge">©2026 Portfolio</div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </section>
-
+ 
        
         <section id="about" class="about-section glass-card fade-in delay-1">
             <div class="about-grid">
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </section>
-
+ 
     
         <section id="recents" class="work-section fade-in delay-2">
             <div class="section-header">
@@ -87,7 +87,7 @@
                 </div>
                 <p class="section-desc">Whether you need a striking portfolio, a functional website, or a custom solution, I'm here to deliver results that align with your vision.</p>
             </div>
-
+ 
             <div class="work-grid">
                 <div class="work-card glass-card">
                     <div class="work-img-wrapper">
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- Services Section -->
         <section id="services" class="services-section fade-in delay-3">
             <div class="section-header text-center">
@@ -118,9 +118,8 @@
                 <h2 class="section-title">My Services</h2>
                 <p class="section-desc mx-auto">Providing comprehensive design and development services tailored to showcase your skills, processes, and unique identity.</p>
             </div>
-
-            <div class="services-list">
-                <!-- Service Item 1: Webflow -->
+ 
+            <div class="services-list">                <!-- Service Item 1: Webflow -->
                 <div class="service-item glass-card">
                     <div class="service-content">
                         <span class="service-num">01</span>
@@ -128,7 +127,7 @@
                             <h3>Webflow Design & Development</h3>
                             <p>I craft fully responsive, visually stunning, and highly functional websites that reflect your unique style and professional identity.</p>
                         </div>
-                        <a href="./web.html" class="service-link-btn" title="View Web Projects">
+                        <a href="./html/web.html" class="service-link-btn" title="View Web Projects">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -145,7 +144,7 @@
                             <h3>UI/UX Design</h3>
                             <p>User research, wireframing, high-fidelity UI design, and interactive prototypes built to maximize user engagement and convert visitors.</p>
                         </div>
-                        <a href="./ui.html" class="service-link-btn" title="View UI/UX Projects">
+                        <a href="./html/ui.html" class="service-link-btn" title="View UI/UX Projects">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -159,14 +158,14 @@
                             <h3>Motion Graphics & Visuals</h3>
                             <p>Engaging micro-interactions, dynamic illustrations, and video content that make interfaces feel alive and responsive.</p>
                         </div>
-                        <a href="./motion.html" class="service-link-btn" title="View Motion Projects">
+                        <a href="./html/motion.html" class="service-link-btn" title="View Motion Projects">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
-                </div>
+                </div>>
             </div>
         </section>
-
+ 
         <!-- Showcasing Section -->
         <section class="showcase-section glass-card fade-in delay-4">
             <div class="showcase-grid">
@@ -183,7 +182,7 @@
             </div>
         </section>
     </main>
-
+ 
     <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="container">
@@ -203,7 +202,7 @@
                         <p>Product Designer & Developer</p>
                     </div>
                 </div>
-
+ 
                 <div class="footer-social-wrapper">
                     <h4>Follow Me</h4>
                     <div class="social-links">
@@ -226,7 +225,7 @@
             </div>
         </div>
     </footer>
-
+ 
     <!-- Interactive navigation highlight script -->
     <script>
         // Header scroll behavior
@@ -238,11 +237,11 @@
                 header.classList.remove('scrolled');
             }
         });
-
+ 
         // Simple active link tracker on scroll
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-links a');
-
+ 
         window.addEventListener('scroll', () => {
             let current = '';
             sections.forEach(section => {
@@ -252,7 +251,7 @@
                     current = section.getAttribute('id');
                 }
             });
-
+ 
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href').includes(current) && current !== '') {
